@@ -1,0 +1,27 @@
+.hero {
+    padding: 200px 0;
+    background: url(./img-webstudio/hero.png) no-repeat center;
+    background-size: cover;
+    &-title{
+        font-family: Roboto;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    &-btn{
+        display: block;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        opacity: 0px;    
+        margin: 0 auto;
+        @include btn(#2196F3,#FFFFFF,216px,50px,4px);
+    }
+}

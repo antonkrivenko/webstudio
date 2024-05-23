@@ -1,0 +1,38 @@
+.work {
+    padding-bottom: 94px;
+    &-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    &-list {
+        display: flex;
+        gap: 30px;
+    }
+    &-list-img-wrap {
+        position: relative;
+    }
+    &-list-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        background-color:  #2F303ACC;
+        width: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.41px;
+        letter-spacing: 0.03em;
+    }
+}

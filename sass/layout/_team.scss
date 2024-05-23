@@ -1,0 +1,47 @@
+.team {
+    padding:94px 0;
+    background-color: #F5F4FA;
+    &-title{
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+    }
+    &-list {
+        display: flex;
+        gap: 30px
+    }
+    &-list-item {
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        box-shadow: 0px 2px 1px  #00000033;
+    }
+    &-list-text,
+    &-list-title {
+        text-align: center;
+    }
+    &-list-text {
+        margin-bottom: 30px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.75px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #757575;
+    }
+    &-list-title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        letter-spacing: 0.03em;
+        text-align: center; 
+    }
+}

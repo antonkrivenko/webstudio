@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSutdio</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css " integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Open+Sans&family=Roboto:wght@400;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css " integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css\main.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -43,7 +43,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
-                <button class="hero-btn">Замовити послугу</button>
+                <button class="hero-btn"  data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="features">
@@ -290,7 +290,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container foter-container">
+        <div class="container footer-container">
             <div>
             <a href="" class="logo">Web<span class="footer-logo">Sutdio</span></a>
             <address class="address">
@@ -305,28 +305,28 @@
             <p class="join-text">Приєднуйтесь</p>
             <ul class="social-list">
                 <li class="social-list-item-footer">
-                    <a href="" class="social-list-link-footer">
+                    <a href="" class="footer-social-list-link">
                         <svg width="20" height="20">
                             <use href="./symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-list-item-footer">
-                    <a href="" class="social-list-link-footer">
+                    <a href="" class="footer-social-list-link">
                         <svg width="20" height="20">
                             <use href="./symbol-defs.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-list-item-footer">
-                    <a href="" class="social-list-link-footer">
+                    <a href="" class="footer-social-list-link">
                         <svg width="20" height="20"> 
                             <use href="./symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-list-item-footer">
-                    <a href="" class="social-list-link-footer">
+                    <a href="" class="footer-social-list-link">
                         <svg width="20" height="20">
                             <use href="./symbol-defs.svg#icon-linkedin"></use>
                         </svg>
@@ -334,8 +334,42 @@
                 </li>
             </ul>
             </div>
+            <div class="e-mail-input">
+                <p class="join-text">Підпишіться на розсилку</p>
+                <input type="text" placeholder="E-mail" class="e-mail-input-search">
+                <button class="e-mail-input-btn">Підписатися
+                    <svg width="24" height="24">
+                        <use href="./symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h1 class="dani">Залиште свої дані, ми вам передзвонимо</h1>
+        <form action="" class="form">
+        <label for="" class="name">Ім'я  
+        <svg>
+        <use></use>
+        </svg>
+        <input type="text" class="input-name">
+        </label>
+        <label for="" class="telefon">Телефон <br>
+        <input type="tel" class="input-telefon">
+        </label>
+        <label for="" class="post">Пошта <br>
+        <input type="email" class="input-post">
+        </label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <p class="coment"></p>
+        <input type="checkbox" class="checkbox">
+        <p>Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a></p>
+        <button type="submit">Відправити</button>
+        </form>
+            <button class="button" data-modal-close>Закрити</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

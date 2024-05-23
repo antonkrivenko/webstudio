@@ -1,0 +1,13 @@
+@mixin btn($bg,$color,$width,$height,$border-radius) {
+    background-color: $bg;
+    color: $color;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    }
+@mixin flex($flex,$justify-content,$align-items,$gap){
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}

@@ -1,0 +1,80 @@
+.portfolio {
+    padding: 94px 0;
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &-list-item {
+        max-width: 370px;
+        border: solid 1px #EEEEEE;
+    }
+    &-list-link:hover .overlay-text {
+        transform: translateY(0);
+    }
+    &-list-text-wrap {
+        color: black;
+        padding: 20px 24px;
+    }
+    &-list-title {
+        margin-bottom: 4px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        text-align: left;    
+    }
+    &-list-text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color:#757575;    
+    }
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+    &-text {
+        position: absolute;
+        padding: 63px 24px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        background-color: #2196F3;   
+        color: #FFFFFF; 
+        bottom: 0;
+        height: 100%;
+        transform: translateY(100%);
+        transition: 1s;
+        opacity: 0.9;
+        
+    }
+}
+.filter-list {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    &-btn {
+        padding: 6px 22px;
+        transition: .3s;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        @include btn(_,#212121,_,_,4px);
+        &:hover {
+            background-color: #2196F3;
+            color: #FFFFFF;
+        }    
+    }
+}

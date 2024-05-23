@@ -1,0 +1,64 @@
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    &-container {
+        @include flex(flex,_,center,93px);
+    }
+    &-logo {
+        color: #000000;
+    }
+}
+.contact-list {
+    margin-left: auto;
+    @include flex(flex,_,_,50px);
+    &-link {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.41px;
+        letter-spacing: 0.02em;
+        text-align: left;       
+        color: #757575; 
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        transition: .5s;
+        &:hover {
+            color: #2196F3;
+        }
+    }
+    &-item svg use {
+        transition: .5s;
+        &:hover svg use {
+            fill: #2196F3;
+        }
+    }
+}
+.nav-list {
+    @include flex(flex,_,_,50px);
+    &-link {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.41px;
+        letter-spacing: 0.02em;
+        text-align: left;    
+        color: #212121;
+        transition: 0.2s;
+        padding-bottom: 28px;
+        &:hover {
+            color: #2196F3;
+        }
+        &:hover::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #2196F3;
+            position: relative;
+            top: 28px;
+            border-radius: 2px;
+            margin-bottom: -3px;
+          }
+    }
+}

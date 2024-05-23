@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Open+Sans&family=Roboto:wght@400;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css " integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="css\main.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,14 +18,14 @@
             <a href="index.html" class="logo">Web<span class="header-logo">Sutdio</span></a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a href="\index.html" class="nav-list-link">Студія</a></li>
+                    <li class="nav-list-item"><a href="index.html" class="nav-list-link">Студія</a></li>
                     <li class="nav-list-item"><a href="" class="nav-list-link">Портфоліо</a></li>
                     <li class="nav-list-item"><a href="" class="nav-list-link">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contact-list">
                 <li class="contact-list-item"><a href="" class="contact-list-link">
-                    <svg width="16px" height="12px">
+                    <svg width="16" height="12">
                         <use href="./symbol-defs.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com</a></li>
@@ -171,7 +171,8 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
+            <div>
             <a href="" class="logo">Web<span class="footer-logo">Sutdio</span></a>
             <address class="address">
                 <ul class="address-list">
@@ -180,7 +181,50 @@
                     <li class="address-list-item"><a href="" class="address-list-link">+38 096 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
+            </div>
+            <div>
+                <p class="join-text">Приєднуйтесь</p>
+                <ul class="social-list">
+                    <li class="social-list-item-footer">
+                        <a href="" class="footer-social-list-link">
+                            <svg width="20" height="20">
+                                <use href="./symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item-footer">
+                        <a href="" class="footer-social-list-link">
+                            <svg width="20" height="20">
+                                <use href="./symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item-footer">
+                        <a href="" class="footer-social-list-link">
+                            <svg width="20" height="20"> 
+                                <use href="./symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item-footer">
+                        <a href="" class="footer-social-list-link">
+                            <svg width="20" height="20">
+                                <use href="./symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="e-mail-input">
+                    <p class="join-text">Підпишіться на розсилку</p>
+                    <input type="text" placeholder="E-mail" class="e-mail-input-search">
+                    <button class="e-mail-input-btn">Підписатися
+                        <svg width="24" height="24">
+                            <use href="./symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
     </footer>
 </body>
 </html>

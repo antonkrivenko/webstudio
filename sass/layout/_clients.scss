@@ -1,0 +1,39 @@
+.clients {
+    padding:94px 0;
+    &-list {
+        @include flex(flex,center,_,30px);
+    }
+    &-list-item {
+        transition: .5s;
+        flex-basis: calc((100% - 150px) / 6);
+    }
+    &-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42.19px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+    }
+    &-list-link {
+        fill: #AFB1B8;
+        height: 92px;
+        border-radius: 4px;
+        border: solid 1px #AFB1B8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            border-color: #2196F3;
+        }
+    }
+    &-list-item svg use{
+        transition: .5s;
+    }
+    &-list-item:hover svg use{
+        fill: #2196F3;
+    }
+}
