@@ -1,0 +1,30 @@
+.contact-list {
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+    &-link {
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.41px;
+        letter-spacing: 0.02em;
+        text-align: left;       
+        color: #757575; 
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        transition:  .5s;
+        &:hover {
+            fill: #2196F3;
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        transition:  .5s;
+            &:hover use {
+                fill: #2196F3;
+            }
+        }
+    }

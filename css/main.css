@@ -47,6 +47,146 @@ textarea {
   color: #2196F3;
 }
 
+.button {
+  width: 216px;
+  height: 50px;
+  background-color: cornflowerblue;
+  color: white;
+  border: 1px solid cornflowerblue;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.link {
+  color: #58B0F6;
+}
+
+.data {
+  font-size: 20px;
+  color: #212121;
+  font-family: sans-serif;
+}
+
+.name {
+  font-family: sans-serif;
+  color: #757575;
+}
+
+.input-name {
+  width: 448px;
+  height: 40px;
+}
+
+.telefon {
+  font-family: sans-serif;
+  color: #757575;
+}
+
+.input-telefon {
+  width: 448px;
+  height: 40px;
+}
+
+.post {
+  font-family: sans-serif;
+  color: #757575;
+}
+
+.input-post {
+  width: 448px;
+  height: 40px;
+}
+
+.coment {
+  font-family: sans-serif;
+  color: #757575;
+}
+
+.form-modal-input, .form-modal-textarea {
+  width: 100%;
+}
+
+.form-modal-textarea {
+  height: 128px;
+  padding: 12px 16px;
+  margin-top: 4px;
+}
+
+.modal.text {
+  margin-bottom: 12px;
+}
+
+.form-modal-label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-modal-input {
+  height: 48px;
+  margin-top: 4px;
+}
+
+.privacy-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: "Roboto";
+  line-height: 30px;
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +202,6 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   fill: #AFB1B8;
-  border-radius: 50%;
   width: 44px;
   height: 44px;
   -webkit-transition: 0.5s;
@@ -73,10 +212,53 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 50%;
 }
-.social-list-link-link:hover {
+.social-list-link:hover {
   fill: #FFFFFF;
   background-color: #2196F3;
+}
+
+.contact-list {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.contact-list-link {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.contact-list-link:hover {
+  fill: #2196F3;
+}
+.contact-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.contact-list-item:hover use {
+  fill: #2196F3;
 }
 
 .footer {
@@ -304,7 +486,7 @@ textarea {
 
 .hero {
   padding: 200px 0;
-  background: url(./img-webstudio/hero.png) no-repeat center;
+  background: url(../img-webstudio/hero.png) no-repeat center;
   background-size: cover;
 }
 .hero-title {
@@ -421,38 +603,6 @@ textarea {
   color: #757575;
 }
 
-.hero {
-  padding: 200px 0;
-  background: url(./img-webstudio/hero.png) no-repeat center;
-  background-size: cover;
-}
-.hero-title {
-  font-family: Roboto;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.hero-btn {
-  display: block;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  opacity: 0px;
-  margin: 0 auto;
-  background-color: #2196F3;
-  color: #FFFFFF;
-  width: 216px;
-  height: 50px;
-  border-radius: 4px;
-}
-
 .team {
   padding: 94px 0;
   background-color: #F5F4FA;
@@ -465,7 +615,6 @@ textarea {
   font-weight: 700;
   line-height: 42.19px;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 .team-list {
   display: -webkit-box;
@@ -514,7 +663,7 @@ textarea {
   font-weight: 700;
   line-height: 42.19px;
   letter-spacing: 0.03em;
-  text-align: center;
+  color: #212121;
 }
 .work-list {
   display: -webkit-box;

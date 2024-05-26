@@ -6,16 +6,15 @@
     &-link {
         display: flex;
         fill: #AFB1B8;
-        border-radius: 50%;
         width: 44px;
         height: 44px;
         transition: .5s;
         justify-content: center;
         align-items: center;
-        &-link:hover  {
+        border-radius: 50%;
+        &:hover  {
             fill: #FFFFFF;
             background-color: #2196F3;
         }
     }
-    
 }
