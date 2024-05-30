@@ -23,4 +23,33 @@
         text-align: left;
         color: #757575; 
     }
+    &-list-item::before {
+        background-image: url("../img-webstudio/Group\ 1.png");
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    &-list-item:nth-child(2)::before{
+        background-image: url("../img-webstudio/Group\ 2.png");
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+    }
+    &-list-item:nth-child(3)::before{
+        background-image: url("../img-webstudio/Group\ 3.png");
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+    }
+    &-list-item:nth-child(4)::before{
+        background-image: url("../img-webstudio/Group\ 4.png");
+        width: 270px;
+        height: 120px;
+        content: "";
+        display: inline-block;
+    }
 }
