@@ -62,3 +62,12 @@
           }
     }
 }
+.nav,.contact-list{
+    display: none;
+    @include tab(767px){
+        display: block;
+    }
+    @include desc(1199px){
+        display: flex;
+    }
+}

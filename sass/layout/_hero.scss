@@ -1,16 +1,29 @@
 .hero {
-    padding: 200px 0;
-    background: url(../img-webstudio/hero.png) no-repeat center ;
+    background-color: #2F303A;
+    padding: 118px 0;
+    @include desc(1199px){
+        padding: 200px 0;
+    }
+    // background: url(../img-webstudio/hero.png) no-repeat center ;
     background-size: cover;
     &-title{
+        margin: 0 auto;
+        max-width: 360px;
         font-family: Roboto;
-        font-size: 44px;
         font-weight: 900;
-        line-height: 60px;
         letter-spacing: 0.06em;
         text-align: center;
         color: #FFFFFF;
         margin-bottom: 30px;
+        font-size: 26px;
+        line-height: 42px; 
+        @include desc(1199px){
+            font-size: 44px;
+            line-height: 60px;
+            max-width: 696px;
+        }
+
+        
     }
     &-btn{
         display: block;
@@ -22,6 +35,9 @@
         text-align: center;
         opacity: 0px;    
         margin: 0 auto;
-        @include btn(#2196F3,#FFFFFF,216px,50px,4px);
+        @include btn(#2196F3,#FFFFFF,200px,50px,4px);
+        @include desc(1199px){
+            @include btn(#2196F3,#FFFFFF,216px,50px,4px);
+        }
     }
 }

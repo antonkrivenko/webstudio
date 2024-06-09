@@ -1,6 +1,15 @@
 .team {
     padding:94px 0;
     background-color: #F5F4FA;
+    &-list-img {
+        width: 450px;
+        @include tab(767px){
+            width: 354px;
+        }
+        @include desc(1199px){
+            width: 270px;
+        }
+    }
     &-title{
         text-align: center;
         margin-bottom: 50px;
@@ -11,13 +20,24 @@
         letter-spacing: 0.03em;
     }
     &-list {
-        display: flex;
-        gap: 30px
+        @include tab(767px){
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
     }
     &-list-item {
         background-color: #FFFFFF;
         border-radius: 4px;
         box-shadow: 0px 2px 1px  #00000033;
+        width: 450px;
+        margin-bottom: 30px;
+        @include tab(767px){
+            width: 354px;
+        }
+        @include desc(1199px){
+            width: 270px;
+        }
     }
     &-list-text,
     &-list-title {

@@ -1,7 +1,15 @@
 .clients {
     padding:94px 0;
     &-list {
-        @include flex(flex,center,_,30px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include flex(grid,center,_,30px);
+        @include tab(767px){
+            grid-template-columns: repeat(2, 1fr)
+        }
+        @include desc(1199px){
+            @include flex(flex,center,_,30px);
+        }
     }
     &-list-item {
         transition: .5s;

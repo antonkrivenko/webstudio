@@ -48,7 +48,7 @@
         height: 50px;
         border-radius: 4px;
         background-color: #2196F3;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 4px 0px #D9D9D9;
         color: #FFFFFF;
         text-align: center;
         font-size: 16px;
@@ -76,7 +76,7 @@
         background-color: transparent;
         border: 1px solid rgba(33, 33, 33, 0.20);
         &::placeholder {
-            color: rgba(117, 117, 117, 0.50);
+            color: #757575;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
@@ -120,7 +120,7 @@
         transition: color 0.2s;
         
         &:hover {
-            color: rgba(33, 150, 243, 1);
+            color: #2196F3;
         }
         
         &-icon {
