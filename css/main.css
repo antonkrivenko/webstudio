@@ -481,7 +481,7 @@ textarea {
 }
 
 .header {
-  padding: 25px 0;
+  padding: 15px 0;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 .header-container {
@@ -533,6 +533,9 @@ textarea {
 }
 .contact-list-link:hover {
   color: #2196F3;
+}
+.contact-list-item {
+  margin: 10px 0;
 }
 .contact-list-item svg use {
   -webkit-transition: 0.5s;
@@ -657,19 +660,12 @@ textarea {
 }
 .clients-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: _;
-      -ms-flex-align: _;
-          align-items: _;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 @media screen and (min-width: 767px) {
   .clients-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -677,12 +673,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: _;
-        -ms-flex-align: _;
-            align-items: _;
     gap: 30px;
   }
 }

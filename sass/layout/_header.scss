@@ -1,5 +1,5 @@
 .header {
-    padding: 25px 0;
+    padding: 15px 0;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
     &-container {
         @include flex(flex,_,center,93px);
@@ -26,6 +26,9 @@
         &:hover {
             color: #2196F3;
         }
+    }
+    &-item {
+        margin: 10px 0;
     }
     &-item svg use {
         transition: .5s;
