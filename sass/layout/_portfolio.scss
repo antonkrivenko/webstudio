@@ -1,13 +1,21 @@
 .portfolio {
     padding: 94px 0;
     &-list{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            @include tab(767px){
+               justify-content: start;
+            }
     }
     &-list-item {
         max-width: 370px;
         border: solid 1px #EEEEEE;
+        @include tab(767px){
+            // flex-basis: calc(100% - 30px) / 2;
+            width: 354px;
+        }
     }
     &-list-link:hover .overlay-text {
         transform: translateY(0);
@@ -58,10 +66,20 @@
     }
 }
 .filter-list {
-    margin-bottom: 50px;
     display: flex;
-    gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 30px;
+    @include tab(767px){
+        justify-content: center;
+    }
+    @include desc(1199px){
+        margin-bottom: 50px;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
     &-btn {
         padding: 6px 22px;
         transition: .3s;
