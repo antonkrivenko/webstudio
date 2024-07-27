@@ -6,10 +6,10 @@
             flex-wrap: wrap;
             gap: 30px;
         }
-        // @include desc(1199px){
-        //     display: flex;
-        //     gap: 30px;
-        // }
+        @include desc(1199px){
+            display: flex;
+            gap: 30px;
+        }
     }
     &-list-title {
         font-family: Roboto;
