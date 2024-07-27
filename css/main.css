@@ -345,6 +345,11 @@ textarea {
   top: 10px;
   right: 15px;
   background: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.mob-menu-close-btn:hover {
+  fill: #2196F3;
 }
 .mob-menu-open-btn {
   display: block;
@@ -363,6 +368,8 @@ textarea {
   letter-spacing: 0.02em;
   text-align: left;
   color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .mob-menu-nav-list-link:hover {
   color: #2196F3;

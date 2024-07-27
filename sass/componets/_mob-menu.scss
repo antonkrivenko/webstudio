@@ -37,6 +37,10 @@
         top: 10px;
         right: 15px;
         background: transparent;
+        transition: 0.3s;
+        &:hover{
+            fill: #2196F3;
+        }
     }
     &-open-btn{
         display: block;
@@ -54,6 +58,7 @@
             letter-spacing: 0.02em;
             text-align: left;
             color: inherit;
+            transition: 0.3s;
             &:hover{
                 color: #2196F3;
             }    
