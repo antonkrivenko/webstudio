@@ -34,11 +34,9 @@
   }
     &-close-btn{
         position: absolute;
-        width: 40px;
-        height: 40px;
         top: 10px;
         right: 15px;
-        background-color: transparent;
+        background: transparent;
     }
     &-open-btn{
         display: block;
@@ -80,6 +78,11 @@
         }
     }
   }
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;  
+    }
   .mob-menu.is-hidden{
     transform: translateX(100%);
   }
