@@ -1,15 +1,6 @@
 .team {
     padding:94px 0;
     background-color: #F5F4FA;
-    &-list-img {
-        width: 450px;
-        @include tab(767px){
-            width: 354px;
-        }
-        @include desc(1199px){
-            width: 270px;
-        }
-    }
     &-title{
         text-align: center;
         margin-bottom: 50px;
