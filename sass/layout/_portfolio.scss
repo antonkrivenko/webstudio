@@ -10,11 +10,14 @@
             }
     }
     &-list-item {
-        max-width: 370px;
+        width: 450px;
         border: solid 1px #EEEEEE;
         @include tab(767px){
             // flex-basis: calc(100% - 30px) / 2;
-            width: 354px;
+        width: 354px;
+        }
+        @include desc(1199px){
+            width: 370px;
         }
     }
     &-list-link:hover .overlay-text {

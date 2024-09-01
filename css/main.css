@@ -826,13 +826,76 @@ textarea {
 }
 
 .hero {
-  background-color: #2F303A;
   padding: 118px 0;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/1x-mob-header-img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/1x-mob-header-img.jpg");
+}
+@supports (background-image: url("../../img/1x-mob-header-img.webp")) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/1x-mob-header-img.webp");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/1x-mob-header-img.webp");
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/2x-mob-header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/2x-mob-header-img.jpg");
+  }
+  @supports (background-image: url("../../img/2x-mob-header-img.webp")) {
+    .hero {
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/2x-mob-header-img.webp");
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/2x-mob-header-img.webp");
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../1x-tb-header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../1x-tb-header-img.jpg");
+  }
+  @supports (background-image: url("../../img/1x-tb-header-img.webp")) {
+    .hero {
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/1x-tb-header-img.webp");
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/1x-tb-header-img.webp");
+    }
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/2x-tb-header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/2x-tb-header-img.jpg");
+  }
+  @supports (background-image: url("../../img/2x-tb-header-img.webp")) {
+    .hero {
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/2x-tb-header-img.webp");
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/2x-tb-header-img.webp");
+    }
+  }
 }
 @media screen and (min-width: 1199px) {
   .hero {
     padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/1x-desk-header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/1x-desk-header-img.jpg");
+    background-size: cover;
+  }
+  @supports (background-image: url("../../img/1x-desk-header-img.webp")) {
+    .hero {
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/1x-desk-header-img.webp");
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/1x-desk-header-img.webp");
+    }
+  }
+}
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/2x-desk-header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/2x-desk-header-img.jpg");
+  }
+  @supports (background-image: url("../../img/2x-desk-header-img.webp")) {
+    .hero {
+      background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/2x-desk-header-img.webp");
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/2x-desk-header-img.webp");
+    }
   }
 }
 .hero-title {
@@ -1220,12 +1283,17 @@ textarea {
   }
 }
 .portfolio-list-item {
-  max-width: 370px;
+  width: 450px;
   border: solid 1px #EEEEEE;
 }
 @media screen and (min-width: 767px) {
   .portfolio-list-item {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .portfolio-list-item {
+    width: 370px;
   }
 }
 .portfolio-list-link:hover .overlay-text {

@@ -1,11 +1,24 @@
 .hero {
-    background-color: #2F303A;
-    padding: 118px 0;
+   padding: 118px 0;
+    @include background-image("../../img/1x-mob-header-img.webp","../../img/1x-mob-header-img.jpg",$hero-gradient);
+
+    @include retina(2,192dpi,2dppx){
+        @include background-image("../../img/2x-mob-header-img.webp","../../img/2x-mob-header-img.jpg",$hero-gradient);
+    }
+    @include tab(767px){
+        @include background-image("../../img/1x-tb-header-img.webp","../../1x-tb-header-img.jpg",$hero-gradient);
+        @include retina(2,192dpi,2dppx){
+            @include background-image("../../img/2x-tb-header-img.webp","../../img/2x-tb-header-img.jpg",$hero-gradient);
+        }
+    }
     @include desc(1199px){
         padding: 200px 0;
+        @include background-image("../../img/1x-desk-header-img.webp","../../img/1x-desk-header-img.jpg",$hero-gradient);
+        background-size: cover;
+        @include retina(2,192dpi,2dppx){
+            @include background-image("../../img/2x-desk-header-img.webp","../../img/2x-desk-header-img.jpg",$hero-gradient);
+        }
     }
-    // background: url(../img-webstudio/hero.png) no-repeat center ;
-    background-size: cover;
     &-title{
         margin: 0 auto;
         max-width: 360px;
