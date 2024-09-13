@@ -554,6 +554,7 @@ textarea {
 
 .address {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1199px) {
   .address-list {
@@ -578,7 +579,6 @@ textarea {
 
 .join-text {
   margin-bottom: 20px;
-  margin-top: 30px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
