@@ -414,7 +414,12 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1199px) {
+  .social-list {
+    padding-bottom: 30px;
+  }
 }
 .social-list-link {
   display: -webkit-box;
@@ -578,6 +583,7 @@ textarea {
 }
 
 .join-text {
+  margin-top: 36px;
   margin-bottom: 20px;
   font-family: Roboto;
   font-size: 14px;

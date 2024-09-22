@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @include desc(1199px){
+        padding-bottom: 30px;
+    }
     &-link {
         display: flex;
         fill: #AFB1B8;
